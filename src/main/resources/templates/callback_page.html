@@ -15,7 +15,6 @@ js"></script>
 $(document).ready(function() {
 var fragment = window.location.hash;
 var res = getResponse(fragment);
-window.location.hash = '_#';
 if (res.hasError()) {
 $("<div>Error trying to obtain user's authorization!</div>").insertBefore('#friends');
 return;
